@@ -18,6 +18,16 @@ function updateTime() {
         dublinDateElement.innerHTML = dublinTime.format(`MMMM Do, YYYY`);
         dublinTimeElement.innerHTML = dublinTime.format("h:mm:ss [<small>]A[</small>]");
     }
+
+    let karachiElement = document.querySelector("#karachi");
+    if (karachiElement) {
+        let karachiDateElement = karachiElement.querySelector(".date");
+        let karachiTimeElement = karachiElement.querySelector(".time");
+        let karachiTime = moment().tz("Asia/Karachi");
+        
+        karachiDateElement.innerHTML = karachiTime.format(`MMMM Do, YYYY`);
+        karachiTimeElement.innerHTML = karachiTime.format("h:mm:ss [<small>]A[</small>]");
+    }
 }
 
 function showCity(event) {

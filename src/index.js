@@ -20,9 +20,6 @@ function updateTime() {
     }
 }
 
-updateTime();
-setInterval(updateTime, 1000);
-
 function showCity(event) {
     let citiesTimeZone = event.target.value;
     let citiesName = citiesTimeZone.replace("_", "").split("/")[1];
@@ -40,6 +37,10 @@ function showCity(event) {
         </div>
     `;
 }
+
+updateTime();
+setInterval(updateTime, 1000);
+
 
 let citiesSelectElement = document.querySelector("#cities");
 citiesSelectElement.addEventListener("change", showCity);

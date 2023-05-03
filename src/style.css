@@ -19,6 +19,7 @@ h1 {
 }
 
 h2 {
+    color: #344966;
     font-size: 28px;
     margin: 0 0 5px;
 }
@@ -27,6 +28,11 @@ footer {
     color: #0d1821;
     font-size: 16px;
     text-align: center;
+}
+
+a {
+    color: #0d1821;
+    text-decoration: none;
 }
 
 .container {

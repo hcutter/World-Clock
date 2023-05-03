@@ -1,11 +1,11 @@
 function updateTime() {
-    let sanFranciscoElement = document.querySelector("#san-francisco");
-    let sanFranciscoDateElement = sanFranciscoElement.querySelector(".date");
-    let sanFranciscoTimeElement = sanFranciscoElement.querySelector(".time");
-    let sanFranciscoTime = moment().tz("America/San_Francisco");
+    let losAngelesElement = document.querySelector("#los-angeles");
+    let losAngelesDateElement = losAngelesElement.querySelector(".date");
+    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
+    let losAngelesTime = moment().tz("America/Los-Angeles");
     
-    sanFranciscoDateElement.innerHTML = sanFranciscoTime.format(`MMMM Do, YYYY`);
-    sanFranciscoTimeElement.innerHTML = sanFranciscoTime.format("h:mm:ss [<small>]A[</small>]");
+    losAngelesDateElement.innerHTML = losAngelesTime.format(`MMMM Do, YYYY`);
+    losAngelesTimeElement.innerHTML = losAngelesTime.format("h:mm:ss [<small>]A[</small>]");
     
     let dublinElement = document.querySelector("#dublin");
     let dublinDateElement = dublinElement.querySelector(".date");
